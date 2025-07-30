@@ -1,5 +1,17 @@
 
 const no = document.getElementById("display")
+no.addEventListener("keydown", function (e) {
+      const allowedKeys = [
+        '0','1','2','3','4','5','6','7','8','9',
+        '+','-','*','/','%','=','(',')','.', '^',
+        'Backspace','Delete','ArrowLeft','ArrowRight','Enter'
+      ];
+
+      // If key is not allowed, prevent it
+      if (!allowedKeys.includes(e.key)) {
+        e.preventDefault();
+      }
+    });
 
 function cleardisplay(){
     no.value = ""
