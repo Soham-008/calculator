@@ -22,3 +22,7 @@ function calculate(){
     
      
 }
+function goback(){
+    no.value=Math.floor(no.value /10)
+  
+}
